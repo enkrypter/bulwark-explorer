@@ -1,4 +1,4 @@
-
+	
 import config from '../../config'
 import Actions from '../core/Actions';
 import blockchain from '../../lib/blockchain';
@@ -74,7 +74,7 @@ class CoinSummary extends Component {
         <div className="row">
           <div className="col-md-12 col-lg-9">
             <div className="row">
-              <div className="col-md-12 col-lg-6">
+              <div className="col-md-12">
                 <CardStatus
                   avgBlockTime={coin.avgBlockTime}
                   avgMNTime={coin.avgMNTime}
@@ -85,9 +85,6 @@ class CoinSummary extends Component {
                   countCarverMovements={coin.countCarverMovements}
                   coin={coin}
                 />
-              </div>
-              <div className="col-md-12 col-lg-6">
-                <CardPoSCalc />
               </div>
             </div>
             <div className="row">
