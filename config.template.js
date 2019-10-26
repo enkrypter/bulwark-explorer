@@ -5,21 +5,21 @@ const { SocialType } = require('./features/social/data');
  */
 const config = {
   api: {
-    host: 'https://explorer.bulwarkcrypto.com',
+    host: 'https://explorer.monetaryunit.org',
     port: '3000',
-    portWorker: '443',
+    portWorker: '3000',
     prefix: '/api',
     timeout: '5s'
   },
   coinDetails: {
-    name: 'Bulwark',
-    shortName: 'BWK',
-    displayDecimals: 2,
-    longName: 'Bulwark Cryptocurrency',
+    name: 'MonetaryUnit',
+    shortName: 'MUE',
+    displayDecimals: 8,
+    longName: 'MonetaryUnit Cryptocurrency',
     coinNumberFormat: '0,0.0000',
     coinTooltipNumberFormat: '0,0.0000000000', // Hovering over a number will show a larger percision tooltip
-    websiteUrl: 'https://bulwarkcrypto.com/',
-    masternodeCollateral: 5000, // MN ROI% gets based on this number. If your coin has multi-tiered masternodes then set this to lowest tier (ROI% will simply be higher for bigger tiers)
+    websiteUrl: 'https://monetaryunit.org/',
+    masternodeCollateral: 500000, // MN ROI% gets based on this number. If your coin has multi-tiered masternodes then set this to lowest tier (ROI% will simply be higher for bigger tiers)
   },
   offChainSignOn: {
     enabled: true,
@@ -29,7 +29,7 @@ const config = {
   // Add any important block counting down in this array
   blockCountdowns: [
     {
-      block: 602880, // What block are we counting down to?
+      block: 846720, // What block are we counting down to?
       beforeTitle: 'Next Superblock', // What do we show before the block number is hit?
       afterTitle: 'Superblock Active For' // What do we show after the block number is hit?
     }
@@ -59,7 +59,7 @@ const config = {
   },
   coinMarketCap: {
     api: 'http://api.coinmarketcap.com/v1/ticker/',
-    ticker: 'bulwark'
+    ticker: 'monetaryunit'
   },
 
   /**
@@ -132,35 +132,35 @@ const config = {
     'FEE': {
       // Adds a new label metadata address
       carverAddressLabelWidget: {
-        label: 'Transaction Fee ⌚',
+        label: 'Transaction Fee β',
         title: 'A small portion of a transaction will be sent to this address. Referred to as "Transaction Fee".'
       }
     },
     'COINBASE': {
       // Adds a new label metadata address
       carverAddressLabelWidget: {
-        label: 'Coinbase (Premine & POW) 💎',
+        label: 'Coinbase (Premine & POW) π’',
         title: 'This address was active during Proof Of Work (POW) phase to distribute rewards to miners & masternode owners.'
       }
     },
     'MN': {
       // Adds a new label metadata address
       carverAddressLabelWidget: {
-        label: 'Masternode Rewards 💎',
+        label: 'Masternode Rewards π’',
         title: 'Each block contains a small portion that is awarded to masternode operators that lock 5000 BWK. Masternodes contribute to the network by handling certain coin operations within the network.'
       }
     },
     'POW': {
       // Adds a new label metadata address
       carverAddressLabelWidget: {
-        label: 'Proof Of Work Rewards 💎',
+        label: 'Proof Of Work Rewards π’',
         title: 'Bulwark started as a Proof Of Work & Masternode coin. Blocks would be mined by powerful computers and be rewarded for keeping up the network.'
       }
     },
     'POS': {
       // Adds a new label metadata address
       carverAddressLabelWidget: {
-        label: 'Proof Of Stake Rewards 💎',
+        label: 'Proof Of Stake Rewards π’',
         title: 'Inputs that are over 100 BWK can participate in network upkeep. Each block (~90 seconds) one of these inputs is rewarded for keeping up the network.'
       }
     },
