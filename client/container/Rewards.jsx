@@ -87,19 +87,6 @@ class Rewards extends Component {
 
     return (
       <div>
-        <div className="row">
-          <div className="col-md-12 col-lg-6">
-            <HorizontalRule
-              title="Average POS Input Size" />
-            <ChartComponent type={TimeIntervalType.DailyAvgPosInputValue} />
-          </div>
-          <div className="col-md-12 col-lg-6">
-            <HorizontalRule
-              title="Average Daily POS ROI%" />
-            <ChartComponent type={TimeIntervalType.DailyAvgPosRoi} />
-          </div>
-        </div>
-
         <HorizontalRule
           select={select}
           title="Proof Of Stake Rewards" />
