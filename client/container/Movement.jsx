@@ -142,9 +142,6 @@ class Movement extends Component {
       <div>
 
         <HorizontalRule
-          title="Daily Non-Reward Transactions Count" />
-        <ChartComponent type={TimeIntervalType.DailyNonRewardTransactionsCount} />
-        <HorizontalRule
           //dateSelect={getDateDropdown()} //@todo date-by-date range
           select={getPaginationDropdown()}
           //filterSelect={getFilterDropdown()}
