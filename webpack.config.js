@@ -54,7 +54,9 @@ module.exports = {
     compress: true,
     contentBase: path.resolve('public'),
     hot: true,
+    host: 'IP ADDRESS HERE',
     port: 8081,
+    disableHostCheck: true,
     publicPath: '/'
   },
   devtool: 'source-map',
