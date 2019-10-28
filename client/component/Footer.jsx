@@ -33,7 +33,7 @@ class Footer extends Component {
           <span className="footer__legal">
             <div>Copyright &copy; {currentYear} <a href={config.coinDetails.websiteUrl} target="_blank" rel="nofollow noopener">{config.coinDetails.longName}</a></div>
 
-            <div>MonetaryUnit Explorer &copy; 2014 - {currentYear} <a href="https://monetaryunit.org/" target="_blank" rel="nofollow noopener">MonetaryUnit Cryptocurrency</a></div>
+            <div>Audax Explorer &copy; 2014 - {currentYear} <a href="https://audaxproject.io/" target="_blank" rel="nofollow noopener">Audax - Digital Currency</a></div>
           </span>
         </div>
         <div className="footer__block">
@@ -59,16 +59,16 @@ class Footer extends Component {
           <div className="footer__social-media-wrapper">
             <div className="footer__social-title">Social Media</div>
             <div>
-              <a href="https://bitcointalk.org/index.php?topic=778322.0" target="_blank" rel="nofollow noopener">
+              <a href="https://bitcointalk.org/index.php?topic=5149788" target="_blank" rel="nofollow noopener">
                 <Icon name="bitcoin" className="fab footer__social-media-icon" />
               </a>
-              <a href="http://discordapp.com/invite/2jWUncm" target="_blank" rel="nofollow noopener">
+              <a href="https://discord.gg/2Dz3mjm" target="_blank" rel="nofollow noopener">
                 <Icon name="discord" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://github.com/muecoin" target="_blank" rel="nofollow noopener">
+              <a href="https://github.com/theaudaxproject" target="_blank" rel="nofollow noopener">
                 <Icon name="github" className="fab footer__social-media-icon" />
               </a>
-              <a href="https://twitter.com/MonetaryUnit" target="_blank" rel="nofollow noopener">
+              <a href="https://twitter.com/audaxcoin" target="_blank" rel="nofollow noopener">
                 <Icon name="twitter" className="fab footer__social-media-icon" />
               </a>
             </div>

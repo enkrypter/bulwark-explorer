@@ -46,8 +46,8 @@ else {
   router(app);
   // Start the server.
 https.createServer({
-  key: fs.readFileSync('/etc/letsencrypt/live/explorer.monetaryunit.org/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/explorer.monetaryunit.org/fullchain.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/explorer3.audaxproject.io/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/explorer3.audaxproject.io/fullchain.pem')
 }, app).listen(config.api.port, () => {
     console.log(`BlocEx running on port ${ config.api.port }`);
   });

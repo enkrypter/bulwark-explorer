@@ -5,21 +5,21 @@ const { SocialType } = require('./features/social/data');
  */
 const config = {
   api: {
-    host: 'https://explorer.monetaryunit.org',
+    host: 'https://explorer3.audaxproject.io',
     port: '3000',
     portWorker: '3000',
     prefix: '/api',
     timeout: '5s'
   },
   coinDetails: {
-    name: 'MonetaryUnit',
-    shortName: 'MUE',
+    name: 'Audax',
+    shortName: 'AUDAX',
     displayDecimals: 8,
-    longName: 'MonetaryUnit Cryptocurrency',
+    longName: 'Audax - Digital Currency',
     coinNumberFormat: '0,0.0000',
     coinTooltipNumberFormat: '0,0.0000000000', // Hovering over a number will show a larger percision tooltip
-    websiteUrl: 'https://monetaryunit.org/',
-    masternodeCollateral: 500000, // MN ROI% gets based on this number. If your coin has multi-tiered masternodes then set this to lowest tier (ROI% will simply be higher for bigger tiers)
+    websiteUrl: 'https://audaxproject.io/',
+    masternodeCollateral: 150000, // MN ROI% gets based on this number. If your coin has multi-tiered masternodes then set this to lowest tier (ROI% will simply be higher for bigger tiers)
   },
   offChainSignOn: {
     enabled: true,
